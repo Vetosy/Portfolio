@@ -1,0 +1,25 @@
+.header {
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.nav {
+  &__list {
+    padding: 40px 10px;
+    border: 1px solid var(--black-color);
+    border-radius: 23px;
+  }
+
+  &__item {
+    @include mb(40px);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
