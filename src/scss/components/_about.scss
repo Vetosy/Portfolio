@@ -1,5 +1,5 @@
 .about {
-  clip-path: polygon(0 20%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 90%, 0 100%);
   background-color: var(--accent-color);
 
   &__title {
@@ -29,6 +29,7 @@
 
     margin: 0;
     font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
     color: var(--light-color);
   }
