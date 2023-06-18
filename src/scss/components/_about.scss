@@ -1,21 +1,22 @@
 .about {
   padding-bottom: 200px;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  background-color: var(--black-color);
+  clip-path: polygon(0 20%, 100% 0, 100% 90%, 0 100%);
+  background-color: var(--accent-color);
 
   &__title {
     color: var(--light-color);
   }
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex-all-center;
+
+    margin-bottom: 50px;
   }
 
   &__image {
     display: block;
     border-radius: 30px;
+    margin-right: 100px;
   }
 
   &__info {
@@ -31,5 +32,30 @@
     font-size: 18px;
     font-weight: 400;
     color: var(--light-color);
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    color: var(--light-color);
+  }
+
+  &__list {
+    @include flex-all-sb;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+  }
+
+  &__icon {
+    margin-bottom: 20px;
   }
 }

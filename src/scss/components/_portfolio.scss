@@ -1,0 +1,52 @@
+.portfolio {
+  padding-bottom: 200px;
+  clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
+  background-color: var(--light-color);
+
+  &__title {
+    color: var(--black-color);
+  }
+
+  &__item {
+    @include mb(100px);
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding: 50px 0;
+    max-width: 500px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--black-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    @include mr(20px);
+  }
+
+  &__image {
+    display: block;
+    border: 1px solid var(--black-color);
+    height: 100%;
+    border-radius: 30px;
+  }
+}
