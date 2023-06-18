@@ -1,0 +1,35 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 200px;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--black-color);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--light-color);
+  text-transform: initial;
+
+  @include hover {
+    &::before {
+      @include shine;
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      opacity: 0.5;
+      filter: blur;
+      background: var(--btn-gradient-color);
+      transform: translate(-100%, -25%) rotate(10deg);
+      animation: shine 4s infinite;
+    }
+  }
+}

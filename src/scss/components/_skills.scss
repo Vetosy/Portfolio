@@ -1,0 +1,28 @@
+.skills {
+  padding-top: 120px;
+  background-color: var(--light-color);
+
+  &__title {
+    color: var(--black-color);
+  }
+
+  &__list {
+    @include flex-all-sb;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+  }
+}
