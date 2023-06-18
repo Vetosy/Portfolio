@@ -84,12 +84,6 @@ a {
   max-width: var(--container-width);
 }
 
-.container-fluid {
-  margin: 0 100px auto;
-  padding: 0 var(--container-fluid-offset);
-  max-width: var(--container-fluid-width);
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -116,4 +110,16 @@ a {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
   gap: 30px;
+}
+
+.section-offset {
+  padding: 200px 0 120px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
 }

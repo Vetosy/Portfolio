@@ -1,0 +1,35 @@
+.about {
+  padding-bottom: 200px;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  background-color: var(--black-color);
+
+  &__title {
+    color: var(--light-color);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__image {
+    display: block;
+    border-radius: 30px;
+  }
+
+  &__info {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    @include mb(30px);
+
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+  }
+}

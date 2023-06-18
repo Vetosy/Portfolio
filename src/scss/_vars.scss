@@ -2,18 +2,23 @@
 // colors
 :root {
   // base
-  --font-family: "Inter", sans-serif;
-  --content-width: 1260px;
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1320px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  --content-fluid-width: 380px;
-  --container-fluid-offset: 15px;
-  --container-fluid-width: calc(
-    var(--content-fluid-width) + (var(--container-fluid-offset) * 2)
-  );
-
   // colors
   --light-color: #ffffff;
-  --black-color: #000000;
+  --black-color: #1e1e21;
+  --gray-color: #8b8b8b;
+  --silver-color: #cccccc;
+
+  // gradient
+
+  --btn-gradient-color: linear-gradient(
+    to left,
+    transparent 0%,
+    #ffffff 40% 60%,
+    transparent 100%
+  );
 }
