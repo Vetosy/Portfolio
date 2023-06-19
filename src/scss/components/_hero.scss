@@ -4,10 +4,19 @@
 
   &__container {
     @include flex-all-sb;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__content {
     max-width: 660px;
+
+    @include tablet {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -18,14 +27,33 @@
     font-weight: 400;
     color: var(--black-color);
 
+    @include mobile {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
     &--bold {
       display: inline-block;
       margin-bottom: 20px;
       font-weight: 700;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
     }
 
     &--position {
       display: block;
+
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      max-width: 100%;
     }
   }
 

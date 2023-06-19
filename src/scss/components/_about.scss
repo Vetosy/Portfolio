@@ -1,6 +1,10 @@
 .about {
-  clip-path: polygon(0 15%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 94%, 0 100%);
   background-color: var(--accent-color);
+
+  @include mobile {
+    clip-path: polygon(0 5%, 100% 0, 100% 97%, 0 100%);
+  }
 
   &__title {
     color: var(--light-color);
@@ -10,18 +14,35 @@
     @include flex-all-center;
 
     margin-bottom: 50px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__image {
     display: block;
     border-radius: 30px;
     margin-right: 100px;
+
+    @include tablet {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__info {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__text {
@@ -40,15 +61,22 @@
   }
 
   &__list {
-    @include flex-all-sb;
-
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
   }
 
   &__item {
+    grid-column: 1 span;
+
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+
+    @include tablet {
+      grid-column: 2 span;
+    }
   }
 
   &__name {
