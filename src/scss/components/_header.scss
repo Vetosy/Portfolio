@@ -24,6 +24,10 @@
   transition: 1s cubic-bezier(0.7, 0, 0.2, 1);
   will-change: transform;
 
+  @include mobile {
+    width: 60vw;
+  }
+
   &__list {
     @include flex-all-center;
 
@@ -36,6 +40,10 @@
     font-size: 40px;
     font-weight: 700;
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__link {
@@ -64,6 +72,10 @@
     margin: 0;
     margin-right: 30px;
     color: var(--black-color);
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__input {

@@ -115,6 +115,10 @@ a {
 
 .section-offset {
   padding: 120px 0;
+
+  @include mobile {
+    padding: 60px 0;
+  }
 }
 
 .title {
@@ -123,6 +127,10 @@ a {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
 }
 
 .burger {
