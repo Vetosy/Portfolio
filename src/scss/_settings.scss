@@ -12,6 +12,7 @@ html {
   height: 100%;
   font-family: var(--font-family);
   -webkit-text-size-adjust: 100%;
+  background-color: var(--light-color);
 }
 
 .page__body {
@@ -122,4 +123,15 @@ a {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
+}
+
+.burger {
+  @include burger;
+
+  --burger-width: 40px;
+  --burger-height: 20px;
+  --burger-line-height: 2px;
+
+  z-index: 101;
+  color: var(--black-color);
 }

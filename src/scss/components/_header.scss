@@ -3,23 +3,68 @@
   background-color: var(--light-color);
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  &__text {
-    margin-right: 30px;
-    color: var(--black-color);
+    @include flex-all-sb;
   }
 }
 
+.nav {
+  @include flex-all-center;
+
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--accent-color);
+  transform: translateX(calc(-150% + 6vw));
+  transition: 1s cubic-bezier(0.7, 0, 0.2, 1);
+  will-change: transform;
+
+  &__list {
+    @include flex-all-center;
+
+    flex-direction: column;
+  }
+
+  &__item {
+    @include mb(30px);
+
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--light-color);
+  }
+
+  &__link {
+    color: currentColor;
+  }
+}
+
+.nav.menu--active {
+  border-radius: 0;
+  transform: translateX(0);
+}
+
 .switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 35px;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-right: 30px;
+    color: var(--black-color);
+  }
 
   &__input {
     opacity: 1;

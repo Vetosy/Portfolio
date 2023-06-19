@@ -41,6 +41,8 @@
 
   &__list {
     @include flex-all-sb;
+
+    flex-wrap: wrap;
   }
 
   &__item {
