@@ -1,9 +1,21 @@
 <header class="header">
   <div class="header__container container">
-    <p class="header__text">Сменить фон</p>
-    <label class="switch">
-      <input class="switch__input" type="checkbox" aria-label="Переключатель фона">
-      <span class="switch__slider" aria-hidden="true"></span>
-    </label>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+    <nav class="nav" aria-label="Основное меню" data-menu>
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#about" data-scroll data-menu-item class="nav__link">Обо мне</a></li>
+        <li class="nav__item"><a href="#portfolio" data-scroll data-menu-item class="nav__link">Портфолио</a></li>
+        <li class="nav__item"><a href="#contacts" data-scroll data-menu-item class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__switch switch">
+      <p class="switch__text">Сменить фон</p>
+      <label class="switch__wrapper">
+        <input class="switch__input" type="checkbox" aria-label="Переключатель фона" data-theme-toggle>
+        <span class="switch__slider" aria-hidden="true"></span>
+      </label>
+    </div>
   </div>
 </header>
