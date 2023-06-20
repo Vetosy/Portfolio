@@ -61,22 +61,12 @@
     }
   }
 
-  &__link {
+  &__image {
+    display: block;
     @include shadowAnimation;
 
     box-shadow: 300px 300px 300px rgba(2, 170, 176, 0.9);
     border-radius: 30px;
     animation: shadowAnimation 2s ease-in-out infinite;
-
-    &:focus {
-      outline: 2px solid var(--accent-color);
-      outline-offset: 4px;
-      border-radius: 30px;
-    }
-  }
-
-  &__image {
-    display: block;
-    border-radius: 30px;
   }
 }
