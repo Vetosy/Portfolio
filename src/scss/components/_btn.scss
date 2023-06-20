@@ -56,4 +56,13 @@
       color: var(--light-color);
     }
   }
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+  }
+
+  &:active {
+    color: var(--gray-color);
+  }
 }

@@ -17,7 +17,7 @@
     }
 
     @include mobile {
-      @include mb(30px)
+      @include mb(30px);
     }
   }
 
@@ -65,7 +65,15 @@
     @include mobile {
       @include mr(0);
 
-      @include mb(20px)
+      @include mb(20px);
+    }
+  }
+
+  &__project {
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 4px;
+      border-radius: 30px;
     }
   }
 

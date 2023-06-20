@@ -47,7 +47,44 @@
   }
 
   &__link {
+    position: relative;
+    overflow: hidden;
     color: currentColor;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--black-color);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s;
+      opacity: 0;
+    }
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 10px;
+      border-radius: 30px;
+    }
+
+    @include hover {
+      &::after {
+        @include fillAnimation;
+
+        animation: fillAnimation 0.3s linear forwards;
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      color: var(--gray-color);
+    }
   }
 }
 

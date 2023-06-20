@@ -1,6 +1,10 @@
 .hero {
-  min-height: 600px;
+  min-height: 800px;
   background-color: var(--light-color);
+
+  @include mobile {
+    min-height: 600px;
+  }
 
   &__container {
     @include flex-all-sb;
@@ -54,6 +58,20 @@
   &__btn {
     @include mobile {
       max-width: 100%;
+    }
+  }
+
+  &__link {
+    @include shadowAnimation;
+
+    box-shadow: 300px 300px 300px rgba(2, 170, 176, 0.9);
+    border-radius: 30px;
+    animation: shadowAnimation 2s ease-in-out infinite;
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 4px;
+      border-radius: 30px;
     }
   }
 

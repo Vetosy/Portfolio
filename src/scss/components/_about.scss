@@ -4,6 +4,7 @@
 
   @include mobile {
     clip-path: polygon(0 5%, 100% 0, 100% 97%, 0 100%);
+    padding-top: 100px;
   }
 
   &__title {

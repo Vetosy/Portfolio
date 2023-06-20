@@ -2,17 +2,26 @@
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   background-color: var(--accent-color);
 
+  &__container {
+    text-align: center;
+  }
+
   &__title {
     margin-bottom: 30px;
     color: var(--light-color);
   }
 
   &__email {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
-    text-align: center;
     color: var(--light-color);
     font-size: 20px;
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 4px;
+      border-radius: 30px;
+    }
   }
 
   &__list {
@@ -45,6 +54,12 @@
 
     &--github {
       background-image: url(../img/github-icon.svg);
+    }
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 4px;
+      border-radius: 30px;
     }
   }
 }
