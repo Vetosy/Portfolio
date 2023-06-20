@@ -142,4 +142,9 @@ a {
 
   z-index: 101;
   color: var(--black-color);
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+  }
 }
