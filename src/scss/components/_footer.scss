@@ -23,42 +23,4 @@
       border-radius: 30px;
     }
   }
-
-  &__list {
-    @include flex-all-center;
-
-    flex-wrap: wrap;
-  }
-
-  &__item {
-    @include mr(20px);
-  }
-
-  &__link {
-    @include flex-all-center;
-
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &--insta {
-      background-image: url(../img/insta.svg);
-    }
-
-    &--tg {
-      background-image: url(../img/tg.svg);
-    }
-
-    &--github {
-      background-image: url(../img/github-icon.svg);
-    }
-
-    &:focus {
-      outline: 2px solid var(--light-color);
-      outline-offset: 4px;
-    }
-  }
 }
