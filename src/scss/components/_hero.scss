@@ -62,9 +62,10 @@
   }
 
   &__image {
-    display: block;
     @include shadowAnimation;
 
+    display: block;
+    margin-bottom: 40px;
     box-shadow: 300px 300px 300px rgba(2, 170, 176, 0.9);
     border-radius: 30px;
     animation: shadowAnimation 2s ease-in-out infinite;
