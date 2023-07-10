@@ -13,12 +13,12 @@
 
   &__email {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: var(--light-color);
     font-size: 20px;
 
     &:focus {
-      outline: 2px solid var(--light-color);
+      outline: 2px solid var(--black-color);
       outline-offset: 4px;
       border-radius: 30px;
     }

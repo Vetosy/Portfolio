@@ -17,6 +17,10 @@
     background-size: cover;
     background-position: center;
 
+    &--email {
+      background-image: url(../img/email.svg);
+    }
+
     &--insta {
       background-image: url(../img/insta.svg);
     }
@@ -30,7 +34,7 @@
     }
 
     &:focus {
-      outline: 2px solid var(--light-color);
+      outline: 2px solid var(--black-color);
       outline-offset: 4px;
     }
   }
