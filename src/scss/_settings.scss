@@ -141,6 +141,7 @@ a {
   --burger-height: 24px;
   --burger-line-height: 4px;
 
+  display: none;
   z-index: 101;
   color: var(--black-color);
 
@@ -156,9 +157,8 @@ a {
     border-radius: 5px;
   }
 
-  &:focus {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 4px;
+  @include tablet {
+    display: block;
   }
 }
 
@@ -204,13 +204,14 @@ a {
     border: 1px solid var(--black-color);
     border-radius: 4px;
     background-color: var(--light-color);
-    transition: background-color 0.3s ease, fill 0.3s ease;
+    transition: background-color 0.3s ease;
 
     svg {
       width: 30px;
       height: 30px;
       object-fit: cover;
       fill: var(--black-color);
+      transition: fill 0.3s ease;
     }
 
     @include hover {
@@ -245,5 +246,19 @@ a {
   @include mobile {
     bottom: 15px;
     right: 15px;
+  }
+}
+
+.skiplink {
+  position: absolute;
+  top: -200px;
+  left: 20px;
+  transition: top 0.3s ease;
+  color: var(--black-color);
+
+  &:focus {
+    top: 20px;
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
   }
 }

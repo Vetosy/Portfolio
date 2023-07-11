@@ -8,7 +8,7 @@
   }
 
   &__title {
-    color: var(--light-color);
+    color: var(--black-color);
   }
 
   &__wrapper {
@@ -26,7 +26,6 @@
   }
 
   &__image {
-    display: block;
     border-radius: 30px;
     margin-right: 100px;
 
@@ -53,12 +52,12 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--light-color);
+    color: var(--black-color);
   }
 
   &__subtitle {
     font-size: 30px;
-    color: var(--light-color);
+    color: var(--black-color);
   }
 
   &__list {
@@ -83,7 +82,7 @@
   &__name {
     font-size: 18px;
     font-weight: 400;
-    color: var(--light-color);
+    color: var(--black-color);
   }
 
   &__icon {
