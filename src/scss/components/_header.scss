@@ -3,7 +3,12 @@
   background-color: var(--light-color);
 
   &__container {
-    @include flex-all-sb;
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablet {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -64,12 +69,6 @@
       transform-origin: left;
       transition: transform 0.3s;
       opacity: 0;
-    }
-
-    &:focus {
-      outline: 2px solid var(--light-color);
-      outline-offset: 10px;
-      border-radius: 30px;
     }
 
     @include hover {
