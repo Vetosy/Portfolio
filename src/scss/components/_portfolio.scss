@@ -12,7 +12,7 @@
     justify-content: space-between;
 
     @include tablet {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
     }
 
