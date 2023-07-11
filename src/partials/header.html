@@ -6,15 +6,18 @@
     </button>
     <nav class="nav" aria-label="Основное меню" data-menu>
       <ul class="nav__list list-reset">
-        <li class="nav__item"><a href="#about" data-scroll data-menu-item class="nav__link">Обо мне</a></li>
-        <li class="nav__item"><a href="#portfolio" data-scroll data-menu-item class="nav__link">Портфолио</a></li>
-        <li class="nav__item"><a href="#footer" data-scroll data-menu-item class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#about" tabindex="-1" data-scroll data-menu-item class="nav__link">Обо мне</a>
+        </li>
+        <li class="nav__item"><a href="#portfolio" tabindex="-1" data-scroll data-menu-item
+            class="nav__link">Портфолио</a></li>
+        <li class="nav__item"><a href="#footer" tabindex="-1" data-scroll data-menu-item class="nav__link">Контакты</a>
+        </li>
       </ul>
     </nav>
     <div class="header__switch switch">
       <p class="switch__text">Сменить фон</p>
       <label class="switch__wrapper">
-        <input class="switch__input" type="checkbox" aria-label="Переключатель фона" data-theme-toggle>
+        <input class="switch__input" tabindex="-1" type="checkbox" aria-label="Переключатель фона" data-theme-toggle>
         <span class="switch__slider" aria-hidden="true"></span>
       </label>
     </div>
