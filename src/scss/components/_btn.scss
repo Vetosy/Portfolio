@@ -58,9 +58,10 @@
   }
 
   &--fill {
+    font-weight: 700;
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
-    color: var(--light-color);
+    color: var(--black-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 
     @include hover {
