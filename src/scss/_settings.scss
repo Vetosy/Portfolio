@@ -248,17 +248,3 @@ a {
     right: 15px;
   }
 }
-
-.skiplink {
-  position: absolute;
-  top: -200px;
-  left: 20px;
-  transition: top 0.3s ease;
-  color: var(--black-color);
-
-  &:focus {
-    top: 20px;
-    outline: 2px solid var(--accent-color);
-    outline-offset: 4px;
-  }
-}

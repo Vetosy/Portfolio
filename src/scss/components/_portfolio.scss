@@ -1,8 +1,13 @@
 .portfolio {
   background-color: var(--light-color);
+  padding-bottom: 50px;
 
   &__title {
     color: var(--black-color);
+  }
+
+  &__list {
+    margin-bottom: 100px;
   }
 
   &__item {
@@ -10,6 +15,10 @@
 
     display: flex;
     justify-content: space-between;
+
+    &:nth-child(n + 4) {
+      display: none;
+    }
 
     @include tablet {
       flex-direction: column-reverse;
@@ -71,7 +80,7 @@
 
   &__project {
     &:focus {
-      outline: 2px solid var(--accent-color);
+      outline: 2px solid var(--black-color);
       outline-offset: 4px;
       border-radius: 30px;
     }
@@ -83,4 +92,13 @@
     height: 100%;
     border-radius: 30px;
   }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.portfolio__item.is-visible {
+  display: flex;
 }

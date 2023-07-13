@@ -3,3 +3,4 @@ import './components/scroll';
 import './components/burger';
 import './components/theme';
 import './components/aos';
+import './components/showmore';
