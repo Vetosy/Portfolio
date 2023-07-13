@@ -57,8 +57,20 @@
     }
   }
 
+  &--fill {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--light-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    @include hover {
+      background-color: var(--black-color);
+      color: var(--light-color);
+    }
+  }
+
   &:focus {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid var(--black-color);
     outline-offset: 4px;
   }
 

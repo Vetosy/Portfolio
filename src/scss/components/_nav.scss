@@ -1,0 +1,89 @@
+.nav {
+  @include tablet {
+    @include flex-all-center;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 22;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--accent-color);
+    transform: translateX(calc(-150% + 6vw));
+    transition: 1s cubic-bezier(0.7, 0, 0.2, 1);
+    will-change: transform;
+  }
+
+  &__list {
+    @include flex-all-center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include mr(30px);
+
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black-color);
+
+    @include tablet {
+      @include mr(0);
+
+      @include mb(30px);
+
+      font-size: 32px;
+      color: var(--light-color);
+    }
+  }
+
+  &__link {
+    position: relative;
+    overflow: hidden;
+    color: currentColor;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+      opacity: 0;
+    }
+
+    &:focus {
+      outline: 2px solid var(--black-color);
+      outline-offset: 4px;
+    }
+
+    @include hover {
+      &::after {
+        @include fillAnimation;
+
+        animation: fillAnimation 0.3s linear forwards;
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      color: var(--gray-color);
+    }
+  }
+
+  &.menu--active {
+    border-radius: 0;
+    transform: translateX(0);
+  }
+}
