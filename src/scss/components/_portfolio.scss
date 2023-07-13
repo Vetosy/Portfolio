@@ -7,11 +7,11 @@
   }
 
   &__list {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   &__item {
-    @include mb(100px);
+    @include mb(60px);
 
     display: flex;
     justify-content: space-between;
@@ -35,10 +35,13 @@
     padding: 50px 0;
     max-width: 500px;
 
-    @include mobile {
-      padding: 20px;
+    @include tablet {
       max-width: 100%;
       margin-right: 0;
+    }
+
+    @include mobile {
+      padding: 20px;
     }
   }
 
@@ -75,10 +78,15 @@
       @include mr(0);
 
       @include mb(20px);
+
+      max-width: 100%;
     }
   }
 
   &__project {
+    display: block;
+    width: 100%;
+
     &:focus {
       outline: 2px solid var(--black-color);
       outline-offset: 4px;
@@ -91,6 +99,10 @@
     border: 1px solid var(--black-color);
     height: 100%;
     border-radius: 30px;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__btn {
